@@ -2382,7 +2382,8 @@ const (
 
 	IntentsGuilds                 Intent = 1 << 0
 	IntentsGuildMembers           Intent = 1 << 1
-	IntentsGuildBans              Intent = 1 << 2
+	IntentsGuildModeration        Intent = 1 << 2
+	IntentsGuildBans              Intent = IntentsGuildModeration // TODO: remove when compatibility is not needed
 	IntentsGuildEmojis            Intent = 1 << 3
 	IntentsGuildIntegrations      Intent = 1 << 4
 	IntentsGuildWebhooks          Intent = 1 << 5
